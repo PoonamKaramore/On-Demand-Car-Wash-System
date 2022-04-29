@@ -1,0 +1,112 @@
+<!-- <mat-card class="card">
+    <h1 class="text-center" style="color: rgb(0, 0, 0);">Place Order</h1>
+    <div class="content">
+        <form (ngSubmit)="addOrder()">
+            <mat-form-field class="full-width" appearance="outline" background-color="black">
+                <mat-label>Name</mat-label>
+                <input [(ngModel)]="Order.orderId" name="name" type="name" matInput placeholder="enter username" required="Required">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Address</mat-label>
+                <input [(ngModel)]="Order.address" name="address" type="text" matInput placeholder="enter your address" required="Required">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Mobile Number</mat-label>
+                <input [(ngModel)]="Order.phoneNo" name="mobile" type="number" matInput placeholder="enter your mobile number" required="Required">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Car Name</mat-label>
+                <input [(ngModel)]="Order.carname" name="carname" type="text" matInput placeholder="enter your car name" required="Required">
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Car Number</mat-label>
+                <input [(ngModel)]="Order.carnumber" name="carno" type="text" matInput placeholder="enter your car number" required="Required">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Date</mat-label>
+                <input [(ngModel)]="Order.date" name="date" type="date" matInput placeholder="date" required="Required">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Washpack</mat-label>
+                <input [(ngModel)]="Order.washpack" name="washpack" type="text" matInput placeholder="enter washpack">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Time</mat-label>
+                <input [(ngModel)]="Order.time" name="time" type="time" matInput placeholder="time" required="Required">
+            </mat-form-field>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Total Amount</mat-label>
+                <input [(ngModel)]="Order.totalamount" name="amount" type="number" matInput placeholder="amount" required="Required">
+            </mat-form-field>
+
+            <div class="container text-center">
+                <button type="submit" mat-raised-button color="primary">Order</button>
+            </div>
+        </form>
+    </div>
+</mat-card> -->
+
+
+<mat-card class="main">
+    <h1 class="text-center" style="color: black;">Place Order</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+
+                <form (submit)="addOrder()">
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Name</mat-label>
+                        <input required [(ngModel)]="Order.customername" type="text" name="id" placeholder="Enter here" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Address</mat-label>
+                        <input required [(ngModel)]="Order.address" type="address" name="address" placeholder="Enter here" matInput />
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter Customer Contact</mat-label>
+                        <input required [(ngModel)]="Order.phoneNo" type="text" name="contact" placeholder="Enter here" matInput />
+                    </mat-form-field>
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter car name</mat-label>
+                        <input required [(ngModel)]="Order.carname" type="text" name="carName" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">Enter car number</mat-label>
+                        <input required [(ngModel)]="Order.carnumber" type="text" name="carnumber" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">select wash pack</mat-label>
+                        <input required [(ngModel)]="Order.washpack" type="text" name="washPack" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">select date</mat-label>
+                        <input required [(ngModel)]="Order.date" type="date" name="date" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;">select time</mat-label>
+                        <input required [(ngModel)]="Order.time" type="time" name="time" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+
+                    <mat-form-field class="w100" appearance="outline">
+                        <mat-label style="color: black;"><b>Total amount is</b></mat-label>
+                        <input required [(ngModel)]="Order.totalamount" type="number" name="totalAmount" placeholder="Enter here" matInput/>
+                    </mat-form-field>
+
+                    <div class="container text-center">
+                        <button mat-raised-button color="warn">Place Order</button>
+                        <button style="margin-left: 5px;" mat-raised-button color="warn" (click)="paynow()">Pay Now</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</mat-card>

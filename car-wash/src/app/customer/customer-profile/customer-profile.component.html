@@ -1,0 +1,80 @@
+<h1 style="margin-left:40%; margin-top: 0px;">Your Profile Details</h1>
+<mat-card class="card">
+    <mat-card-content>
+        <div class="bootstrap-wrapper" style="margin-left: 90px; margin-right: 90px;">
+            <div class="container" style="margin-left: 70px;margin-right: 90px;padding-top: 20px;">
+                <div class="content" style="margin-left: 30%;">
+                    <img src="../../assets/default.png" alt="" class="profile-image">
+                    <h1>Payal Mundhada</h1>
+                </div>
+                <div class="row" style="margin-left: 90px;margin-right: 90px;">
+                    <div class="col-md-10 offset-md-1" style="margin-left: 10px;margin-right: 90px;">
+                        <!-- table-details -->
+                        <table class="table text-center" *ngFor="let p of profile">
+                            <tr>
+                                <td>CustomerId</td>
+                                <td>9987{{p.id}}</td>
+                            </tr>
+                            <tr>
+                                <td>UserName</td>
+                                <td>Payalk12{{p.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>Payal12@gmail.com {{p.email}}</td>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td>abc@123{{p.password}}</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Payal Mundhada{{p.customername}}</td>
+                            </tr>
+                            <tr>
+                                <td>ContactNo</td>
+                                <td>9980206790{{p.phoneNo}}</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>Ram Nagar,Delhi{{p.address}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </mat-card-content>
+    <!-- <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">UPDATE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions> -->
+
+</mat-card>
+<!-- <mat-card class="card">
+    <h1 style="text-align: center;">Your Profile Details</h1>
+    <mat-card-content>
+        <div class="bootstrap-wrapper">
+            <div class="container">
+                <div class="container text-center" *ngFor="let p of profile">
+                    <img src="../../assets/default.png" alt="" class="profile-image">
+
+                    <mat-card-content>Id : 9987{{p.id}}</mat-card-content>
+                    <mat-card-content>UserName: {{p.username}}</mat-card-content>
+                    <mat-card-content>Email:Payal12@gmail.com {{p.email}}</mat-card-content>
+                    <mat-card-content>Password : abc@123{{p.password}}</mat-card-content>
+                    <mat-card-content>Customer Name : Payal Mundhada{{p.customername}}</mat-card-content>
+                    <mat-card-content>Address : Ram Nagar , Delhi{{p.address}}</mat-card-content>
+                    <mat-card-content>Mobile Number : 9980206790{{p.phoneNo}}</mat-card-content>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card> -->

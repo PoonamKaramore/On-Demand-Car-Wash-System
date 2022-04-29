@@ -1,0 +1,31 @@
+.card {
+    background-color: rgb(170, 170, 252);
+}
+
+.button {
+    margin-top: 20px;
+    margin-left: 40%;
+    height: 60px;
+    width: 230px;
+    font-size: 20px;
+    background-color: #027b9a;
+}
+
+
+/* 
+.content {
+    display: inline-flex;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    text-align: center;
+    width: 20%;
+    background-color: transparent;
+}
+
+.button {
+    background-color: transparent;
+    margin-left: 20%;
+    height: 60px;
+    width: 100px;
+} */

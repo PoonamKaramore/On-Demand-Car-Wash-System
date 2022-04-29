@@ -1,0 +1,17 @@
+<mat-card-header>
+    <mat-card-title style="padding-top: 20px;">Wash Packages</mat-card-title>
+</mat-card-header>
+<div class="button">
+    <button [routerLink]="'/admin/addwashpacks/'" mat-flat-button color="primary" style="margin-left: 42%;">
+    <mat-icon>add_circle</mat-icon>Add</button>
+
+</div>
+<mat-card class="mt10 mb20 mr20 card" *ngFor="let w of washpacks">
+    <!-- <img src="../../../assets/car gallery 4.jpg" height="120px" width="190px" class="image"> -->
+    <mat-card-subtitle>{{w.id}}</mat-card-subtitle>
+    <mat-card-content style="font-weight: bold;" class="content">{{w.name}}</mat-card-content>
+    <mat-card-content>{{w.cost}} $</mat-card-content>
+    <mat-card-content>{{w.description}}</mat-card-content>
+    <button [routerLink]="'/admin/updatewashpack/'+ w.id" mat-flat-button color="primary">Update</button>
+    <button mat-flat-button color="primary" class="m120" (click)="deletewashpack(w.id)">Delete</button>
+</mat-card>

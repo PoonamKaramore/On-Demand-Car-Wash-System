@@ -1,0 +1,61 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../../assets/log.webp" class="image">
+            </div>
+            <div class="col-md-6 mt-6" style="margin-top: 40px; margin-left: 150px; margin-bottom: 0px;">
+                <h1 class="text-center" style="color: darkblue;">Register</h1>
+
+                <form (ngSubmit)="submitform()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Customer Name</mat-label>
+                        <input [(ngModel)]="signup.customername" name="name" matInput placeholder="enter your name" required="required">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Username</mat-label>
+                        <input [(ngModel)]="signup.username" name="username" matInput placeholder="enter your name" required="required">
+                        <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Address</mat-label>
+                        <input [(ngModel)]="signup.address" name="address" type="text" matInput placeholder="enter address" required="required">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Mobile Number</mat-label>
+                        <input [(ngModel)]="signup.phoneNo" name="number" type="number" matInput placeholder="enter mobile number" required="required">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Email Address</mat-label>
+                        <input [(ngModel)]="signup.email" name="email" type="email" matInput placeholder="example@gmail.com" required="required">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        <input [(ngModel)]="signup.password" name="password" type="password" matInput placeholder="enter password" required="required">
+                    </mat-form-field>
+
+                    <mat-form-field appearance="outline">
+                        <mat-label>Role</mat-label>
+                        <select required matNativeControl [(ngModel)]="signup.role" name="role">
+                            <option  name = "admin" value="customer">Admin</option>
+                            <option name = "customer" value="customer">Customer</option>
+                            <option name = "washer"  value="washer">Washer</option>
+                        </select>
+                    </mat-form-field>
+
+                    <div class="text-center">
+                        <button type="submit" mat-raised-button color="primary" style="margin-bottom: 19px;">Register</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>

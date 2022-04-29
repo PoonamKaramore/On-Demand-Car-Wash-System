@@ -1,0 +1,51 @@
+.card {
+    background-color: transparent;
+    /* background-color: rgb(92, 20, 92); */
+    margin-left: 140%;
+    width: 300%;
+}
+
+.button {
+    margin-right: 15px;
+    background-color: rgb(32, 52, 88);
+    color: white;
+    height: 50px;
+}
+
+.content {
+    margin-left: 95px;
+    margin-top: 10px;
+}
+
+
+/* .card {
+    margin: 0%;
+    height: 100%;
+    padding: 0%;
+    /* background-color: #000000; */
+
+
+/* background-color: rgb(193, 156, 228); */
+
+
+/* background-color: #027b9a; 
+}/*
+/*
+#button {
+    color: white;
+} */
+
+
+/*
+mat-action-list :hover {
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(105, 105, 105); 
+}
+
+/* .wrapper {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: #b1d7e0;
+    position: sticky;
+} */

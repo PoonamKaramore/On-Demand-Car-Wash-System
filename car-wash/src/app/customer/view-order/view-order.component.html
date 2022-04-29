@@ -1,0 +1,16 @@
+<mat-card-header>
+    <mat-card-title style="padding-top: 20px;">All Orders</mat-card-title>
+</mat-card-header>
+
+<mat-card class="card" style=" background-color: rgb(170, 170, 252);" *ngFor="let o of orders">
+    <mat-card-subtitle>orderId: {{o.orderId}}</mat-card-subtitle>
+    <mat-card-content>Name : {{o.customername}}</mat-card-content>
+    <mat-card-content>Address: {{o.address}}</mat-card-content>
+    <mat-card-content>Mobile Number: {{o.phoneNo}}</mat-card-content>
+    <mat-card-content>Car : {{o.carname}}</mat-card-content>
+    <mat-card-content>Car Number:{{o.carnumber}}</mat-card-content>
+    <mat-card-content>Washpack: {{o.washpack}}</mat-card-content>
+    <mat-card-content>Date: {{o.date}}</mat-card-content>
+    <mat-card-content>Time: {{o.time}}</mat-card-content>
+    <button mat-raised-button routerLink="/customer/addrating">Rating</button>
+</mat-card>

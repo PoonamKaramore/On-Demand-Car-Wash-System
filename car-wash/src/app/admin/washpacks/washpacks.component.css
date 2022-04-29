@@ -1,0 +1,40 @@
+.card {
+    background-color: rgb(170, 170, 252);
+    /* background: url('../../../assets/gallery-5.jpg'); */
+    /* background-color: rgb(255, 255, 255); */
+}
+
+mat-card-header {
+    text-align: end;
+}
+
+.image {
+    align-items: end;
+    /* margin-left: 400px; */
+}
+
+
+/* .button {
+    margin-left: 500px;
+    margin-bottom: 50px;
+} */
+
+.mt10 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 40px;
+}
+
+.m120 {
+    margin-left: 20px;
+}
+
+.mr20 {
+    margin-left: 10px;
+}
+
+.content {
+    font-size: 18px;
+}

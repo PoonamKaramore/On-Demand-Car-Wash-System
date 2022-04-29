@@ -1,0 +1,51 @@
+<h1 style="margin-left:40%; margin-top: 0px;">Your Profile Details</h1>
+<mat-card class="card">
+    <mat-card-content>
+        <div class="bootstrap-wrapper" style="margin-left: 90px; margin-right: 90px;">
+            <div class="container" style="margin-left: 70px;margin-right: 90px;padding-top: 20px;">
+                <div class="content" style="margin-left: 30%;">
+                    <img src="../../assets/default.png" alt="" class="profile-image">
+                    <h1 style="margin-left: 7%;">Pooja K </h1>
+                </div>
+                <div class="row" style="margin-left: 90px;margin-right: 90px;">
+                    <div class="col-md-10 offset-md-1" style="margin-left: 10px;margin-right: 90px;">
+                        <!-- table-details -->
+                        <table class="table text-center" *ngFor="let p of profile">
+                            <tr>
+                                <td>CustomerId</td>
+                                <td>12{{p.id}}</td>
+                            </tr>
+                            <tr>
+                                <td>UserName</td>
+                                <td>pooja1{{p.username}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>pooja@gmail.com {{p.email}}</td>
+                            </tr>
+                            <tr>
+                                <td>password</td>
+                                <td>p123{{p.password}}</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>Pooja K{{p.customername}}</td>
+                            </tr>
+                            <tr>
+                                <td>ContactNo</td>
+                                <td>8865398790{{p.phoneNo}}</td>
+                            </tr>
+                            <tr>
+                                <td>Address</td>
+                                <td>test{{p.address}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </mat-card-content>
+</mat-card>

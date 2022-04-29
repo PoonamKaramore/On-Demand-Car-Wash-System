@@ -1,0 +1,24 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>local_car_wash</mat-icon>
+  </button>
+    <span>Super Car Wash</span>
+
+    <span class="example-spacer"></span>
+    <a *ngIf="!isUserActive" [routerLink]="'/login'" mat-icon-button class="example-icon favorite-icon mr20 ml20" aria-label="Example icon-button with heart icon ">
+   Login
+ </a>
+    <a *ngIf="!isUserActive" [routerLink]="'/signup'" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+     Register
+  </a>
+    <!--
+    shows the current user who is logged in -->
+    <a *ngIf="isUserActive" mat-icon-button class="example-icon " aria-label="Example icon-button with share icon" style="margin-right: 40px;">
+      {{user.username}}
+    </a>
+
+    <!-- logout option -->
+    <a (click)="Logout()" *ngIf="isUserActive" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      logout
+  </a>
+</mat-toolbar>

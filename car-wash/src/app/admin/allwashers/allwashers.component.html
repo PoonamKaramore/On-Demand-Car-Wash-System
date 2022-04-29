@@ -1,0 +1,10 @@
+<mat-card-header>
+    <mat-card-title style="padding-top: 20px;">Washer Details</mat-card-title>
+</mat-card-header>
+<mat-card class="card" *ngFor="let washer of Washer ">
+    <mat-card-subtitle>Washer Id: {{washer.washerId}}</mat-card-subtitle>
+    <mat-card-content>Name: {{washer.name}}</mat-card-content>
+    <mat-card-content>Email Address:{{washer.email}}</mat-card-content>
+    <mat-card-content>Password: {{washer.password}}</mat-card-content>
+    <mat-card-content>Mobile Number:{{washer.phoneNo}}</mat-card-content>
+</mat-card>

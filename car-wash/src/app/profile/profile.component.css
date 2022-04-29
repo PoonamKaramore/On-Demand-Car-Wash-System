@@ -1,0 +1,28 @@
+.card {
+    margin-left: 20%;
+    margin-right: 5%;
+    padding-top: 20px;
+    background-color: rgb(170, 170, 252);
+}
+
+.bootstrap-wrapper {
+    margin-left: 120px;
+}
+
+.profile-image {
+    max-width: 160px;
+    max-height: 160px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.table {
+    width: 90%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table tr td {
+    margin-left: 40px;
+    border: 0.1px solid black;
+}

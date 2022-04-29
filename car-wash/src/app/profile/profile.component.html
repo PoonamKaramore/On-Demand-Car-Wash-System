@@ -1,0 +1,48 @@
+<h1 style="margin-left:50%; margin-top: 0px;">Your Profile Details</h1>
+<mat-card class="card">
+    <mat-card-content>
+        <div class="bootstrap-wrapper" style="margin-left: 80px; margin-right: 90px;">
+            <div class="container" style="margin-left: 90px;margin-right: 90px;padding-top: 20px;">
+                <div class="content" style="margin-left: 30%;">
+                    <img src="../../assets/default.png" alt="" class="profile-image">
+                    <h1>Poonam Karamore</h1>
+                </div>
+                <div class="row" style="margin-left: 90px;margin-right: 90px;">
+                    <div class="col-md-10 offset-md-1" style="margin-left: 10px;margin-right: 90px;">
+                        <!-- table-details -->
+                        <table class="table text-center" *ngFor="let w of profile">
+                            <tr>
+                                <td>AdminId</td>
+                                <td>{{w.id}}</td>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>{{w.name}}</td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td>{{w.email}}</td>
+                            </tr>
+                            <tr>
+                                <td>ContactNo</td>
+                                <td>{{w.phone}}</td>
+                            </tr>
+                            <tr>
+                                <td>Role</td>
+                                <td>{{w.role}}</td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </mat-card-content>
+    <!-- <mat-card-actions class="text-center">
+        <button mat-raised-button color="primary">UPDATE</button>
+        <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions> -->
+
+</mat-card>

@@ -1,0 +1,9 @@
+.content {
+    background-color: rgb(170, 170, 252);
+    margin-left: 30px;
+}
+
+.w100 {
+    margin-right: 10px;
+    width: 100%;
+}

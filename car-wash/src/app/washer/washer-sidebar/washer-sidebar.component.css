@@ -1,0 +1,17 @@
+.card {
+    background-color: transparent;
+    margin-left: 150%;
+    width: 300%;
+}
+
+.button {
+    margin-right: 15px;
+    background-color: rgb(32, 52, 88);
+    color: white;
+    height: 50px;
+}
+
+.content {
+    margin-left: 55px;
+    margin-top: 10px;
+}

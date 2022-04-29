@@ -1,0 +1,19 @@
+<mat-card-header>
+    <mat-card-title style="padding-top: 20px;">All Orders</mat-card-title>
+</mat-card-header>
+
+<div class="content">
+    <mat-card class=".mt10 .mb-20 card" *ngFor="let o of orders">
+        <mat-card-subtitle>{{o.orderId}}</mat-card-subtitle>
+        <mat-card-content>{{o.customername}}</mat-card-content>
+        <mat-card-content>{{o.address}}</mat-card-content>
+        <mat-card-content>{{o.phoneNo}}</mat-card-content>
+        <mat-card-subtitle>{{o.carname}}</mat-card-subtitle>
+        <mat-card-content>{{o.carnumber}}</mat-card-content>
+        <mat-card-content>{{o.washpack}}</mat-card-content>
+        <mat-card-content>{{o.date}}</mat-card-content>
+        <mat-card-content>{{o.time}}</mat-card-content>
+        <!-- <button mat-flat-button color="primary">Accept</button>
+        <button mat-flat-button color="primary" class="m120">Reject</button> -->
+    </mat-card>
+</div>

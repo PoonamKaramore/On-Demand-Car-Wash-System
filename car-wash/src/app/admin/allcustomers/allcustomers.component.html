@@ -1,0 +1,10 @@
+<mat-card-header>
+    <mat-card-title class="title" style="padding-top: 20px;">Customer Details</mat-card-title>
+</mat-card-header>
+<mat-card class="card" style="margin-right: 20%;" *ngFor="let c of Customer ">
+    <mat-card-content style="font-weight: bold;">Name:{{c.customername}}</mat-card-content>
+    <mat-card-content>Email Address:{{c.email}}</mat-card-content>
+    <mat-card-content>Password: {{c.password}}</mat-card-content>
+    <mat-card-content>Address: {{c.address}}</mat-card-content>
+    <mat-card-content>Mobile Number:{{c.phoneNo}}</mat-card-content>
+</mat-card>

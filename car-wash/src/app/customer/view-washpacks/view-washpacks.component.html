@@ -1,0 +1,11 @@
+<mat-card-header>
+    <mat-card-title style="padding-top: 20px;">Wash Packages</mat-card-title>
+</mat-card-header>
+
+<mat-card class="card" style=" background-color: rgb(170, 170, 252);" *ngFor="let w of washpacks">
+    <mat-card-subtitle>{{w.id}}</mat-card-subtitle>
+    <mat-card-content>{{w.name}}</mat-card-content>
+    <mat-card-content>{{w.cost}}</mat-card-content>
+    <mat-card-content>{{w.description}}</mat-card-content>
+    <button [routerLink]="'/customer/add-order/'+ w.id" mat-raised-button color="warn" class="ml20">Book</button>
+</mat-card>
